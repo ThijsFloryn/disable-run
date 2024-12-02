@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verwijder "DisableRun" in Register-editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            color: #0078D7;
+        }
+        code {
+            background-color: #eef;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .note {
+            border-left: 4px solid #f39c12;
+            background-color: #fcf8e3;
+            padding: 10px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hoe "DisableRun" verwijderen in Register-editor</h1>
+    <p>Volg deze stappen zorgvuldig om de <code>DisableRun</code>-vermelding te verwijderen uit de Windows Register-editor:</p>
+    
+    <ol>
+        <li>Druk op <code>Win + R</code> op je toetsenbord om het Uitvoeren-venster te openen.</li>
+        <li>Typ <code>regedit</code> en druk op <code>Enter</code>. Als je een melding krijgt van Gebruikersaccountbeheer, klik dan op <strong>Ja</strong> om door te gaan.</li>
+        <li>Navigeer in de Register-editor naar het volgende pad:
+            <ul>
+                <li><code>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer</code></li>
+            </ul>
+        </li>
+        <li>Zoek in het rechterpaneel naar de vermelding <code>DisableRun</code>.</li>
+        <li>Klik met de rechtermuisknop op <code>DisableRun</code> en selecteer <strong>Verwijderen</strong>.</li>
+        <li>Bevestig de verwijdering door op <strong>Ja</strong> te klikken.</li>
+    </ol>
+    
+    <div class="note">
+        <strong>Let op:</strong> Het verwijderen of aanpassen van registervermeldingen kan grote gevolgen hebben voor je systeem. Maak een back-up van het register voordat je wijzigingen aanbrengt. Om een back-up te maken, ga naar <strong>Bestand &gt; Exporteren</strong> en sla een kopie van de huidige registerstatus op.
+    </div>
+    
+    <p>Na het verwijderen van de <code>DisableRun</code>-vermelding, start je computer opnieuw op om de wijzigingen toe te passen.</p>
+    
+    <footer>
+        <p>Voor meer tips, bezoek <a href="https://support.microsoft.com">Microsoft Ondersteuning</a>.</p>
+    </footer>
+</body>
+</html>
